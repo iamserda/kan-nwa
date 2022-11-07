@@ -8,85 +8,137 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="index.css" />
 
         <title>Camp Noir</title>
     </head>
 
-    <body class="d-flex flex-column" style="background-color: whitesmoke;">
+    <body class="d-flex flex-column">
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="title fs-1 text-center">kan::nwa</h1>
-                        <p class="text-center">Earn your black belt in software engineering.</p>
+                        <h1 class="title text-center">kan::nwa</h1>
+                        <p class="sub-title text-center mt-1 mb-0 mx-0">Earn your black belt in software engineering.</p>
                     </div>
                 </div>
             </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand title" href="/">kan::nwa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wk1/index.html">Week1</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
         </header>
 
-        <div class="jumbotron">
+        <div class="jumbotron p-3 my-5">
             <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&q=80"
-                class="img-fluid mb-3" alt="kan::nwa logo" />
+                class="img-fluid d-block mx-auto" alt="kan::nwa logo" />
         </div>
 
         <main>
             <div class="container-fluid">
-                <section class="container row mx-auto">
+                <section class="container row mx-auto my-5">
                     <div class="row d-flex justify-content-between">
-                        <div class="col-sm-5 col-lg-4 order-sm-last">
-                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-                                class="img-fluid mb-3" alt="kan::nwa logo" />
-                            <h4>Discover & Review</h4>
-                            <h5>Our Campsites</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iste nostrum maxime
-                                repudiandae sequi blanditiis repellat, fugit rem sit. Harum nam veniam repellendus
-                                beatae placeat, ipsa quaerat libero ipsam architecto?</p>
+                        <div class="col-sm-5 col-lg-4 d-flex flex-column justify-content-center">
+                            <div class="bg-secondary rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80"
+                                    class="d-block img-fluid my-3 mx-auto rounded-lg" alt="kan::nwa logo" />
+                            </div>
+                            <div class="pt-3">
+                                <h4>Featured Campsites</h4>
+                                <h5>React Lake Campground</h5>
+                                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of
+                                    the pristine React Lake is a favorite for fly fishers.</p>
 
-                            <p>Odit nemo placeat pariatur, dicta mollitia ad consectetur suscipit dolorem impedit neque
-                                consectetur molestiae eligendi eveniet culpa magni!</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus atque repudiandae,
+                                    ea at omnis possimus quod id corrupti vero nihil unde est officiis! In aliquid,
+                                    voluptatem dolores nihil neque magni?</p>
+                            </div>
                         </div>
 
-                        <div class="col-sm-5 col-lg-4">
-                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-                                class="img-fluid m-3" alt="kan::nwa logo" />
-                            <h4>Featured Campsites</h4>
-                            <h5>React Lake Campground</h5>
-                            <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the
-                                pristine React Lake is a favorite for fly fishers.</p>
+                        <div class="col-sm-5 col-lg-4 d-flex flex-column justify-content-center order-sm-last">
+                            <div class="bg-secondary rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80"
+                                class="d-block img-fluid my-3 mx-auto rounded-lg" alt="kan::nwa logo" />
+                            </div>
+                            <div class="pt-3">
+                                <h4>Featured Campsites</h4>
+                                <h5>React Lake Campground</h5>
+                                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of
+                                    the pristine React Lake is a favorite for fly fishers.</p>
 
-                            <p>Laboriosam magni rerum numquam facilis iusto commodi velit dolorem blanditiis aspernatur
-                                recusandae animi at, harum vitae. Quas, porro? Magni deserunt dolor harum veniam
-                                explicabo
-                                debitis aperiam exercitationem accusantium minus reprehenderit.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus atque repudiandae,
+                                    ea at omnis possimus quod id corrupti vero nihil unde est officiis! In aliquid,
+                                    voluptatem dolores nihil neque magni?</p>
+                            </div>
                         </div>
 
-                        <div class="col-md-5 col-lg-4 order-sm-last">
-                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
-                                class="img-fluid mt-3" alt="kan::nwa logo" />
-                            <h4>Our Community Partners</h4>
-                            <h5>Bootstrap Outfitters</h5>
-                            <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                            <p>Laboriosam cum nisi porro est, nesciunt ducimus nobis ad reiciendis delectus fugit
-                                expedita
-                                quis voluptates quia hic ut ratione non, ullam suscipit officia iusto aliquid accusamus!
-                                Sunt harum magnam iure!</p>
+                        <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center order-sm-last">
+                            <div class="bg-secondary rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80"
+                                class="d-block img-fluid my-3 mx-auto rounded-lg" alt="kan::nwa logo" />
+                            </div>
+                            <div class="mt-2">
+                                <h4>Featured Campsites 3</h4>
+                                <h5>React Lake Campground</h5>
+                                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of
+                                    the pristine React Lake is a favorite for fly fishers.</p>
+
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus atque repudiandae,
+                                    ea at omnis possimus quod id corrupti vero nihil unde est officiis! In aliquid,
+                                    voluptatem dolores nihil neque magni?</p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="container row mx-auto">
+                <section class="container row mx-auto my-5">
                     <div class="row">
-                        <div class="my-5 mb-3">
-                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
-                                class="img-fluid rounded-lg" alt="kan::nwa logo" />
+                        <div class="mt-5 mb-3 mx-auto">
+                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                                class="img-fluid rounded-lg d-block mx-auto" alt="kan::nwa logo" />
                         </div>
-                        <div class="mt-5">
+                        <div class="mx-5">
                             <h2 class="text-capitalize text-primary">Discover & Review</h2>
-                            <h3 class="ml-3 text-secondary">Our Campsites</h3>
-                            <p class="ml-3 text-body fs-6">Explore our growing database of curated campsites and leave
+                            <h3 class="text-secondary">Our Campsites</h3>
+                            <p>Explore our growing database of curated campsites and leave
                                 your
                                 own reviews! Explore our growing database of curated campsites and leave your own
                                 reviews!
@@ -96,17 +148,23 @@
 
                 </section>
 
-                <section class="container row">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-sm col-lg-3 bg-secondary p-3 my-3">
-                            <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
+                <section class="container row mx-auto my-5 py-5">
+                    <div class="row d-flex justify-content-center text-white">
+                        <div class="col-md col-lg-3 bg-info p-3 my-3 rounded-lg">
+                            <div class="d-flex flex-column flex-nowrap">
+                                <div class="flex-grow-0">
+                                    <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
                                 class="img-fluid" alt="kan::nwa logo" />
-                            <h4 class="mx-3 my-2">Discover & Review</h4>
+                                </div>
+                                <div class="flex-grow-0">
+                                    <h4 class="mx-3 my-2">Discover & Review</h4>
                             <h5 class="mx-3 my-2">Our Campsites</h5>
                             <p class="mx-3 my-2">Explore our growing database of curated campsites and leave your own
                                 reviews!</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm col-lg-3 bg-secondary p-3 my-3">
+                        <div class="col-md col-lg-3 bg-info p-3 my-3 rounded-lg offset-lg-1">
                             <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
                                 class="img-fluid" alt="kan::nwa logo" />
                             <h4 class="mx-3 my-2">Featured Campsites</h4>
@@ -115,7 +173,7 @@
                                 the shores of the
                                 pristine React Lake is a favorite for fly fishers.</p>
                         </div>
-                        <div class="col-sm col-lg-3 bg-secondary p-3 my-3">
+                        <div class="col-md col-lg-3 bg-info p-3 my-3 rounded-lg offset-lg-1">
                             <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
                                 class="img-fluid" alt="kan::nwa logo" />
                             <h4 class="mx-3 my-2">Our Community Partners</h4>
@@ -126,13 +184,13 @@
                     </div>
                 </section>
 
-                <section class="container row bg-secondary m-auto p-2 w-75 rounded-lg shadow-sm">
+                <section class="container row bg-secondary mx-auto p-2 w-75 rounded-lg shadow-lg my-5">
                     <div class="row bg-white rounded-lg mx-2 my-1">
                         <div class="col-md-5 p-3 rounded-sm">
                             <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
                                 class="img-fluid shadow-sm" alt="some product call to action 2." />
                         </div>
-                        <div class="col-md-6 text-black p-3">
+                        <div class="col-md-6 text-black p-3 my-auto">
                             <div class="container">
                                 <h4 class="text-capitalize text-primary">Discover & Review</h4>
                                 <h5 class="title text-secondary">Our Campsites</h5>
@@ -148,7 +206,7 @@
                             <img src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
                                 class="img-fluid rounded-sm" alt="some product call to action 2." />
                         </div>
-                        <div class="col-md-6 text-black p-3">
+                        <div class="col-md-6 text-black p-3 my-auto">
                             <div class="container">
                                 <h4 class="text-capitalize text-primary">Discover & Review</h4>
                                 <h5 class="title text-secondary">Our Campsites</h5>
@@ -170,26 +228,26 @@
             </div>
         </main>
 
-        <footer class="bg-secondary mt-0">
-            <div class="container bg-secondary pt-3">
-                <div class="row d-flex justify-content-end text-white">
-                    <div class="col-4 col-sm-2 offset-1">
+        <footer class="bg-secondary mt-5">
+            <div class="container pt-3 my-2 rounded-lg">
+                <div class="row d-flex justify-content-end text-white p-3">
+                    <div class="col-3 col-sm-2 offset-1">
                         <h5>kan::nav</h5>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li><a class="text-white" href="#">kan::home</a></li>
                             <li><a class="text-white" href="#">kan::about</a></li>
                             <li><a class="text-white" href="#">kan::areas</a></li>
                             <li><a class="text-white" href="#">kan::connect</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-sm-5">
+                    <div class="col-5 col-sm-4 offset-1">
                         <h5>kan::social</h5>
                         <a class="text-white" href="http://instagram.com/">kan::ig</a>
                         <a class="text-white" href="http://facebook.com/">kan::fb</a>
                         <a class="text-white" href="http://twitter.com/">kan::tw</a>
                         <a class="text-white" href="http://youtube.com/">kan::yt</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-2 offset-1 mr-auto">
                         <h5>kan::connect</h5>
                         tel: 1-305-212-2130<br />
                         email: <a class="text-white" href="mailto:hello@kannwa.com">say hello!</a>
